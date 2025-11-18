@@ -1,0 +1,107 @@
+/* Estilo general del cuerpo del documento */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: blanchedalmond;
+  color: black;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Encabezado fijo con logo y menú horizontal */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  background-color: coral;
+  padding: 20px 40px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Menú de navegación horizontal */
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* Contenedor principal del contenido */
+.contenido {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  margin-top: 120px; /* evita que el header tape el contenido */
+}
+
+/* Sección de texto centrado */
+.texto {
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Sección en columnas: tres bloques alineados horizontalmente */
+.bloques-columnas {
+  display: flex;
+  justify-content: space-between; /* distribuye los bloques uniformemente */
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilo individual de cada bloque */
+.bloque {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  flex: 1 1 calc(33.333% - 2rem); /* tres columnas con espacio entre ellas */
+  max-width: 350px;
+  text-align: center;
+}
+
+/* Pie de página */
+footer {
+  background-color: coral;
+  color: black;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.9em;
+  margin-top: 60px;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .bloques-columnas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bloque {
+    max-width: 90%;
+    flex: 1 1 100%;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}

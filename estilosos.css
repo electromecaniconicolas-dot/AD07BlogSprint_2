@@ -1,0 +1,32 @@
+body {
+  background-color: blanchedalmond;
+}
+
+main {
+  background-color: coral;
+  border-radius: 1rem;
+  padding: 1rem 3rem;
+  max-width: 900px;
+}
+
+img {
+  max-height: 400px;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+.center {
+  border-radius: 1rem;
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-blanco {
+  background-color: white;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
