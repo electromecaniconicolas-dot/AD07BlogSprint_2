@@ -1,69 +1,113 @@
-<!DOCTYPE html> <!-- Indica que el documento usa HTML5 -->
-<html lang="es"> <!-- Define el idioma principal como español -->
-
-<head>
-  <meta charset="UTF-8"> <!-- Codificación de caracteres compatible con acentos -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Diseño adaptable a móviles -->
-  <title>Quiénes somos | Locompro</title> <!-- Título que aparece en la pestaña del navegador -->
-  <link rel="stylesheet" href="styles.css"> <!-- Conexión con el archivo de estilos CSS -->
-</head>
-
-<body>
-
-  <!-- Encabezado del sitio con logo y menú de navegación -->
-  <header>
-    <div class="logo"> <!-- Contenedor del logo y nombre de la marca -->
-      
-      <h1>Locompro</h1> <!-- Nombre de la marca -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Página de inicio</title>
+    <link rel="stylesheet" href="stylen.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header
+        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+      >
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        >
+          <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+          <span class="fs-4" style="font-weight: bold">¡Lo Compro!</span>
+        </a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a
+              href="/"
+              class="nav-link active"
+              aria-current="page"
+              style="background-color: #ff7f50; color: black"
+              >Inicio</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link" style="color: #c83500"
+              >Quiénes Somos</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link" style="color: #c83500"
+              >Contacto</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="faqs.html" class="nav-link" style="color: #c83500">FAQs</a>
+          </li>
+        </ul>
+      </header>
     </div>
-    <nav> <!-- Menú de navegación principal -->
-      <ul>
-        <li><a href="index.html">Inicio</a></li> <!-- Enlace a la página de inicio -->
-        <li><a href="about.html">Quiénes somos</a></li> <!-- Enlace a la página actual -->
-        <li><a href="contact.html">Contacto</a></li> <!-- Enlace a la página de contacto -->
-      </ul>
-    </nav>
-  </header>
 
-  <!-- Contenido principal de la página -->
-  <main class="contenido">
-<section class="bloques-columnas">
-  <div class="bloque">
-    <h2>Diseño y autenticidad</h2>
-    <p>Locompro es una marca colombiana dedicada a la moda femenina, creada por un grupo apasionado por el diseño, la autenticidad y el empoderamiento de la mujer moderna.</p>
-  </div>
+    <!-- Contenido principal de la página -->
+    <main class="contenido">
+      <section class="bloques-columnas">
+        <div class="bloque">
+          <h2>Diseño y autenticidad</h2>
+          <p>
+            Locompro es una marca colombiana dedicada a la moda femenina, creada
+            por un grupo apasionado por el diseño, la autenticidad y el
+            empoderamiento de la mujer moderna.
+          </p>
+        </div>
 
-  <div class="bloque">
-    <h2>Estilo con identidad</h2>
-    <p>Creemos que la ropa no solo viste, sino que expresa fuerza, estilo y personalidad. Nuestro objetivo es ofrecer prendas accesibles, versátiles y con identidad propia.</p>
-  </div>
+        <div class="bloque">
+          <h2>Estilo con identidad</h2>
+          <p>
+            Creemos que la ropa no solo viste, sino que expresa fuerza, estilo y
+            personalidad. Nuestro objetivo es ofrecer prendas accesibles,
+            versátiles y con identidad propia.
+          </p>
+        </div>
 
-  <div class="bloque">
-    <h2>Proyecto digital</h2>
-    <p>Este sitio web es parte de nuestro proyecto de formación en desarrollo web, donde aplicamos metodologías ágiles como SCRUM. ¡Locompro es más que moda, es actitud!</p>
-  </div>
+        <div class="bloque">
+          <h2>Proyecto digital</h2>
+          <p>
+            Este sitio web es parte de nuestro proyecto de formación en
+            desarrollo web, donde aplicamos metodologías ágiles como SCRUM.
+            ¡Locompro es más que moda, es actitud!
+          </p>
+        </div>
 
-  <div class="bloque">
-    <h2>Equipo de Trabajo</h2>
-    <p>Alberto Cortes Palacios</p>
-    <p>Felipe Gonzalez</p>
-    <p>Nicolas Mendieta</p>
-    <p>Margareth Villanueva</p> 
-  </div>
+        <div class="bloque">
+          <h2>Equipo de Trabajo</h2>
+          <p>Alberto Cortes Palacios</p>
+          <p>Felipe Gonzalez</p>
+          <p>Nicolas Mendieta</p>
+          <p>Margareth Villanueva</p>
+        </div>
+      </section>
+    </main>
 
-</section>
-
- 
-  </main>
-
-  <!-- Pie de página con información institucional -->
- <footer class="footer">
-  <p>&copy; Nicolas Mendieta, Juan Felipe Gonzales, Margareth Villanueva, Alberto Cortes  </p>
-  <p>
-    <a>locompro@gmail.com</a> |
-    <a>Locompro</a>
-  </p>
-</footer>
-
-</body>
+    <footer class="footer">
+      <div class="card">
+        <div class="card-header">Locompro</div>
+        <div class="card-body">
+          <figure>
+            <blockquote class="blockquote">
+              <p>
+                Nicolas Mendieta, Juan Felipe Gonzales, Margareth Villanueva,
+                Alberto Cortes
+              </p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              Correo <cite title="Source Title">Locompro@gmail.com</cite>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
