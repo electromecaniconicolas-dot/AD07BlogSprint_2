@@ -4,9 +4,11 @@ body {
 
 main {
   background-color: coral;
+
+  background-color: coral;
   border-radius: 1rem;
   padding: 1rem 3rem;
-  max-width: 900px;
+  max-width: 900px;          /* Centra el contenido dentro de las columnas */
 }
 
 img {
